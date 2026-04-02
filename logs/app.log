@@ -1,0 +1,33 @@
+2026-04-01 11:42:38,804 INFO Added student Student(id=3, name=Blend)
+2026-04-01 11:42:38,807 INFO Saved gradebook data to data\gradebook.json
+2026-04-01 11:42:54,766 INFO Added student Student(id=4, name=Blend)
+2026-04-01 11:42:54,767 INFO Saved gradebook data to data\gradebook.json
+2026-04-01 11:43:43,444 ERROR Error while running command: Course code already exists
+Traceback (most recent call last):
+  File "C:\Users\blepo\OneDrive\Desktop\gradebook_project\main.py", line 57, in main
+    code = gb.add_course(args.code, args.title)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\blepo\OneDrive\Desktop\gradebook_project\gradebook\service.py", line 57, in add_course
+    raise ValueError("Course code already exists")
+ValueError: Course code already exists
+2026-04-01 11:45:25,623 ERROR Error while running command: 'Enrollment not found for student/course'
+Traceback (most recent call last):
+  File "C:\Users\blepo\OneDrive\Desktop\gradebook_project\main.py", line 77, in main
+    avg = gb.compute_average(args.student_id, args.course)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\blepo\OneDrive\Desktop\gradebook_project\gradebook\service.py", line 105, in compute_average
+    raise KeyError("Enrollment not found for student/course")
+KeyError: 'Enrollment not found for student/course'
+2026-04-01 11:45:35,411 INFO Student 1 already enrolled in CS101
+2026-04-01 11:45:43,654 INFO Added grade 95.0 to 1/CS101
+2026-04-01 11:45:43,655 INFO Saved gradebook data to data\gradebook.json
+2026-04-02 14:27:52,132 INFO Added student Student(id=3, name=Blerona)
+2026-04-02 14:27:52,132 INFO Saved gradebook data to data\gradebook.json
+2026-04-02 14:28:58,785 INFO Added course Course(code=Calculus, title=Intro to Calculus)
+2026-04-02 14:28:58,786 INFO Saved gradebook data to data\gradebook.json
+2026-04-02 14:29:37,632 INFO Enrolled student 3 in Calculus
+2026-04-02 14:29:37,634 INFO Saved gradebook data to data\gradebook.json
+2026-04-02 14:29:49,138 INFO Added grade 80.0 to 1/CS101
+2026-04-02 14:29:49,139 INFO Saved gradebook data to data\gradebook.json
+2026-04-02 14:30:40,835 INFO Added grade 91.0 to 3/Calculus
+2026-04-02 14:30:40,836 INFO Saved gradebook data to data\gradebook.json

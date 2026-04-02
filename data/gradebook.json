@@ -1,0 +1,62 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Blend"
+    },
+    {
+      "id": 2,
+      "name": "Berat"
+    },
+    {
+      "id": 3,
+      "name": "Blerona"
+    }
+  ],
+  "courses": [
+    {
+      "code": "CS101",
+      "title": "Intro to CS"
+    },
+    {
+      "code": "MATH200",
+      "title": "Calculus"
+    },
+    {
+      "code": "Calculus",
+      "title": "Intro to Calculus"
+    }
+  ],
+  "enrollments": [
+    {
+      "student_id": 1,
+      "course_code": "CS101",
+      "grades": [
+        92.0,
+        85.0,
+        80.0
+      ]
+    },
+    {
+      "student_id": 1,
+      "course_code": "MATH200",
+      "grades": [
+        78.0
+      ]
+    },
+    {
+      "student_id": 2,
+      "course_code": "CS101",
+      "grades": [
+        88.0
+      ]
+    },
+    {
+      "student_id": 3,
+      "course_code": "Calculus",
+      "grades": [
+        91.0
+      ]
+    }
+  ]
+}
